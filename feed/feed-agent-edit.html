@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Sample CMS | Feed Agent Edit</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://google.com"><img src="https://usatftw.files.wordpress.com/2017/01/yourface.png?w=1000"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="../property-search.html">Properties</a></li>
+            <li><a href="../agent-search.html">Agents</a></li>
+            <li class="active"><a href="../feed.html">Feeds</a></li>
+            <li><a href="../office.html">Office</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="True" aria-expanded="false">Welcome, User</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Manage Preferences</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">User Role</a></li>
+                </ul>
+            </li>
+            <li><a href="../login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="glyphicon glyphicon-cog glyphicon-top" aria-hidden="true"></span> Dashboard <small> Feed Agent Edit </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- breadcrumb for header -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Luxury Agent Edit</li>
+                <li class="li-float-right"><a href="../agent/agent-edit.html"><button type="button" class="btn btn-primary"> Edit Agent </button></a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+    
+    <!-- main content section -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Overview </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="propertyMenu">
+                                <ul class="list-group">
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="../feed.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Overview</a></li>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#property" data-toggle="collapse"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Properties</a></li>
+                                        <div class="collapse" id="property">
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed-property.html">Search Feed</a></li>
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed-property-edit.html">Edit Property</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#agent" data-toggle="toggle"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Agents</a></li>
+                                        <div class="toggle" id="agent">
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent.html">Search Feed</a></li>
+                                            <li class="list-group-item feed-edit-sidebar-link sub-active"><a href="feed-agent.html">Edit Agent</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="feed-office.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Office</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Bob Smith </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <h4 class="col-md-12 border-bottom"> Luxury Feed Data </h4>
+                                <p><label class="col-md-4"><b> Company Agent ID: </b></label> CMS1 </p>
+                                <p><label class="col-md-4"><b> Company Office ID: </b></label> N/A </p>
+                                <p><label class="col-md-4"><b> Last Name: </b></label> Smith </p>
+                                <p><label class="col-md-4"><b> First Name: </b></label> Bob </p>
+                                <p><label class="col-md-4"><b> Status: </b></label> Broker Associate </p>
+                                <p><label class="col-md-4"><b> Company Title: </b></label> Agent </p>
+                                <p><label class="col-md-4"><b> Associate Type: </b></label> N/A </p>
+                                <p><label class="col-md-4"><b> Mobile Phone Number: </b></label> 555-555-5555 </p>
+                                <p><label class="col-md-4"><b> Email Address: </b></label> bobsmith@samplecms.com </p>
+                                <p><label class="col-md-4"><b> Public Name: </b></label> Bob Smith </p>
+                                <p><label class="col-md-4"><b> Real Estate Agent: </b></label> Y </p>
+                                <p><label class="col-md-4"><b> Deep Link Agent Profile: </b></label> http://google.com </p>
+                                <p><label class="col-md-4"><b> Agent Profile: </b></label> N/A </p>
+                                <p><label class="col-md-4"><b> Team Member: </b></label> N/A </p>
+                                <p><label class="col-md-4"><b> Remarks: </b></label><span class="col-md-8 margin-left-neg">Ut consequat eros eu sapien venenatis tincidunt. Suspendisse potenti. Nam in suscipit elit, ac blandit nisl. Aenean pulvinar elit in aliquet malesuada. Nulla facilisi. Donec at tristique diam. Sed consectetur eu libero et fringilla. Praesent consectetur ipsum eget urna hendrerit interdum.</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

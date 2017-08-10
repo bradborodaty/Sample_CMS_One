@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Sample CMS | Luxury Property Feed</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://google.com"><img src="https://usatftw.files.wordpress.com/2017/01/yourface.png?w=1000"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="../property-search.html">Properties</a></li>
+            <li><a href="../agent-search.html">Agents</a></li>
+            <li class="active"><a href="../feed.html">Feeds</a></li>
+            <li><a href="../office.html">Office</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="True" aria-expanded="false">Welcome, User</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Manage Preferences</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">User Role</a></li>
+                </ul>
+            </li>
+            <li><a href="../login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="glyphicon glyphicon-cog glyphicon-top" aria-hidden="true"></span> Dashboard <small> Luxury Property Feed </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- breadcrumb for header -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Luxury Property Feed</li>
+            </ol>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+    
+    <!-- main content section -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg sidebar-min-height">
+                            <h3 class="panel-title property-search-heading"> Overview </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="propertyMenu">
+                                <ul class="list-group">
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="../feed.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Overview</a></li>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#property" data-toggle="toggle"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Properties</a></li>
+                                        <div class="toggle" id="property">
+                                          <li class="list-group-item feed-edit-sidebar-link sub-active"><a href="feed-property.html">Search Feed</a></li>
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed-property-edit.html">Edit Property</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#agent" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Agents</a></li>
+                                        <div class="collapse" id="agent">
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent.html">Search Feed</a></li>
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent-edit.html">Edit Agent</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="feed-office.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Office</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <div class="row">
+                                <div class="col-md-4 property-search-heading">
+                                    <h3 class="panel-title"> Luxury Property Feed </h3>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <input type="text" class="form-control" placeholder="Search Feed">
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="dropdown">
+                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Filter
+                                        <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Price High to Low</a></li>
+                                        <li><a href="#">Price Low to High</a></li>
+                                        <li><a href="#">MLS#</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-hover">
+                                <tr>
+                                    <th>Address</th>
+                                    <th>MLS#</th>
+                                    <th>Price</th>
+                                    <th>Luxury Portfolio</th>
+                                    <th>Elgible for LP</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>1234 Main Street, City, CA</td>
+                                    <td>12345678</td>
+                                    <td>$4,500,000</td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><a href="feed-property-edit.html"><button type="button" class="btn btn-default">View</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>6548 Main Road, City, CA</td>
+                                    <td>87654321</td>
+                                    <td>$3,999,000</td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><a href=""><button type="button" class="btn btn-default">View</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>98 Sample Street, City, CA</td>
+                                    <td>15685247</td>
+                                    <td>$2,799,000</td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><a href=""><button type="button" class="btn btn-default">View</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3269 Sample Road, City, CA</td>
+                                    <td>65986324</td>
+                                    <td>$2,750,000</td>
+                                    <td><span class="glyphicon glyphicon-remove glyphicon-red" aria-hidden="true"></span></td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><a href=""><button type="button" class="btn btn-default">View</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>487 Test Avenue, City, CA</td>
+                                    <td>98745632</td>
+                                    <td>$2,699,000</td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><span class="glyphicon glyphicon-ok glyphicon-green" aria-hidden="true"></span></td>
+                                    <td><a href=""><button type="button" class="btn btn-default">View</button></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

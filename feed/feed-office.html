@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Sample CMS | Feed Office Edit</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://google.com"><img src="https://usatftw.files.wordpress.com/2017/01/yourface.png?w=1000"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="../property-search.html">Properties</a></li>
+            <li><a href="../agent-search.html">Agents</a></li>
+            <li class="active"><a href="../feed.html">Feeds</a></li>
+            <li><a href="../office.html">Office</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="True" aria-expanded="false">Welcome, User</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Manage Preferences</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">User Role</a></li>
+                </ul>
+            </li>
+            <li><a href="../login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="glyphicon glyphicon-cog glyphicon-top" aria-hidden="true"></span> Dashboard <small> Feed Office Edit </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- breadcrumb for header -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Luxury Office Edit</li>
+                <li class="li-float-right"><a href="../office.html"><button type="button" class="btn btn-primary"> Edit Office </button></a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+    
+    <!-- main content section -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Overview </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="propertyMenu">
+                                <ul class="list-group">
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="../feed.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Overview</a></li>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#property" data-toggle="collapse"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Properties</a></li>
+                                        <div class="collapse" id="property">
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed-property.html">Search Feed</a></li>
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed-property-edit.html">Edit Property</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#agent" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Agents</a></li>
+                                        <div class="collapse" id="agent">
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent.html">Search Feed</a></li>
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent.html">Edit Agent</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link active"><a href="feed-office.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Office</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Sample CMS </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <h4 class="col-md-12 border-bottom"> Luxury Feed Data </h4>
+                                <p><label class="col-md-4"><b> Company Office ID: </b></label> CMS1 </p>
+                                <p><label class="col-md-4"><b> Active Status: </b></label> A </p>
+                                <p><label class="col-md-4"><b> Relocation Membership ID: </b></label> 00000 </p>
+                                <p><label class="col-md-4"><b> Office Name: </b></label> Sample CMS </p>
+                                <p><label class="col-md-4"><b> Address 1: </b></label> 1 Main Street </p>
+                                <p><label class="col-md-4"><b> City: </b></label> City </p>
+                                <p><label class="col-md-4"><b> State: </b></label> CA </p>
+                                <p><label class="col-md-4"><b> Zip Code: </b></label> 000000 </p>
+                                <p><label class="col-md-4"><b> Country: </b></label> USA </p>
+                                <p><label class="col-md-4"><b> County: </b></label> County </p>
+                                <p><label class="col-md-4"><b> Phone Number: </b></label> 555-555-5555 </p>
+                                <p><label class="col-md-4"><b> Fax Number: </b></label> 554-555-5554 </p>
+                                <p><label class="col-md-4"><b> Email Address: </b></label> info@samplecms.com </p>
+                                <p><label class="col-md-4"><b> Deep Link Office Profile: </b></label> http://www.google.com </p>
+                                <p><label class="col-md-4"><b> MLS ID 1: </b></label> 2 </p>
+                                <p><label class="col-md-4"><b> MLS Office ID 1: </b></label> 000 </p>
+                                <p><label class="col-md-4"><b> Office Profile: </b></label><span class="col-md-8 margin-left-neg">Ut consequat eros eu sapien venenatis tincidunt. Suspendisse potenti. Nam in suscipit elit, ac blandit nisl. Aenean pulvinar elit in aliquet malesuada. Nulla facilisi. Donec at tristique diam. Sed consectetur eu libero et fringilla. Praesent consectetur ipsum eget urna hendrerit interdum. </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

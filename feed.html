@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Sample CMS | Feed</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://google.com"><img src="https://usatftw.files.wordpress.com/2017/01/yourface.png?w=1000"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="property-search.html">Properties</a></li>
+            <li><a href="agent-search.html">Agents</a></li>
+            <li class="active"><a href="feed.html">Feeds</a></li>
+            <li><a href="office.html">Office</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="True" aria-expanded="false">Welcome, User</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Manage Preferences</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">User Role</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="glyphicon glyphicon-cog glyphicon-top" aria-hidden="true"></span> Dashboard <small> Feed </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- breadcrumb for header -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Luxury Feed</li>
+            </ol>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+    
+    <!-- main content section -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Overview </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="propertyMenu">
+                                <ul class="list-group">
+                                    <li class="list-group-item property-edit-sidebar-link active"><a href="feed.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Overview</a></li>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#property" data-toggle="collapse"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Properties</a></li>
+                                        <div class="collapse" id="property">
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed/feed-property.html">Search Feed</a></li>
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed/feed-property.html">Edit Property</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#agent" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Agents</a></li>
+                                        <div class="collapse" id="agent">
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed/feed-agent.html">Search Feed</a></li>
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed/feed-agent-edit.html">Edit Agent</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="feed/feed-office.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Office</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Overview of Luxury Portfolio </h3>
+                        </div>
+                        <div class="panel-body">
+                            <!-- feed overview -->
+                            <div class="well">
+                                <div class="row">
+                                    <h4 class="col-md-12 border-bottom text-center"> Overview of Current Luxury Portfolio Feed </h4>
+                                    <div class="col-md-4 margin-top margin-bottom">
+                                        <div class="well dash-box well-min-height">
+                                            <a href="feed/feed-property.html">
+                                                <h2><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span id="luxury-property-count">10</span> </h2>
+                                                <h4> Luxury Properties </h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 margin-top margin-bottom">
+                                        <div class="well dash-box well-min-height">
+                                            <a href="feed/feed-agent.html">
+                                                <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 8 </h2>
+                                                <h4> Agents in Feed </h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 margin-top margin-bottom">
+                                        <div class="well dash-box well-min-height">
+                                            <a href="feed/feed-office.html">
+                                                <h2><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> 1 </h2>
+                                                <h4> Offices in Feed </h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h4 class="col-md-12 border-bottom text-center"> Last Sync with Luxury Feed </h4>
+                                    <div class="col-md-12">
+                                        <p class="float-left margin-top margin-bottom"> Last Luxury Portfolio feed sync was on: <span id="demo"> 7/7/2017 at 2:00:00PM </span></p>
+                                        <button type="button" class="btn btn-primary float-right margin-top margin-bottom" onclick="fullDateTime()"">Sync Feed</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end feed overview -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function fullDateTime() {
+            var d = new Date();          
+            var n = d.toLocaleString([], { hour12: true});
+            document.getElementById("demo").innerHTML = n;
+            var x = Math.round(Math.random() * 20) + 1;
+            document.getElementById("luxury-property-count").innerHTML = x;
+        }
+    </script>
+  </body>
+</html>

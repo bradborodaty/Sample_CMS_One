@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Sample CMS | Property Edit</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://google.com"><img src="https://usatftw.files.wordpress.com/2017/01/yourface.png?w=1000"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li class="active"><a href="property-search.html">Properties</a></li>
+            <li><a href="../agent-search.html">Agents</a></li>
+            <li><a href="../feed.html">Feeds</a></li>
+            <li><a href="../office.html">Office</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="True" aria-expanded="false">Welcome, User</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Manage Preferences</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">User Role</a></li>
+                </ul>
+            </li>
+            <li><a href="../login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="glyphicon glyphicon-cog glyphicon-top" aria-hidden="true"></span> Dashboard <small> Property Edit Email </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- breadcrumb for header -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Property Edit Email </li>
+                <li class="li-float-right"><a href="../property-search.html"><button type="button" class="btn btn-primary"> Back to Property Search </button></a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+    
+    <!-- main content section -->
+    <section id="main">
+        <div class="container">
+            <div class="row"> 
+                <!-- sidebar for property edit -->
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Overview </h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                              <li class="list-group-item property-edit-sidebar-link"><a href="property-edit.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Overview</a></li>
+                              <li class="list-group-item property-edit-sidebar-link"><a href="property-data.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Property-Data</a></li>
+                              <li class="list-group-item property-edit-sidebar-link"><a href="property-url.html"><span class="glyphicon glyphicon-random" aria-hidden="true"></span> Urls</a></li>
+                              <li class="list-group-item property-edit-sidebar-link"><a href="property-owner.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Owner Info</a></li>
+                              <li class="list-group-item property-edit-sidebar-link active"><a href="property-email.html"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> Email</a></li>
+                              <li class="list-group-item property-edit-sidebar-link"><a href="property-photo.html"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Photos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end sidbar -->
+                
+                <!-- overview for property edit -->
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> 1234 Main Street, City, CA </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="well">
+                                <!-- thc-live data -->
+                                <div class="row">
+                                    <h4 class="border-bottom col-md-12 text-left"> Email Test </h4>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="email" class="col-md-3 control-label"> Send test email: </label>
+                                            <div class="col-md-9">
+                                                <input type="email" class="form-control" id="email" placeholder="Enter test email" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form group text-left col-md-offset-3 padding-left">
+                                            <button type="button" class="btn btn-success"> Send Test </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row">
+                                    <h4 class="border-bottom col-md-12 text-left margin-top"> Schedule New Email </h4>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date" class="col-md-3 control-label"> Day/time to be sent: </label>
+                                            <input type="datetime-local" class="thc-live" id="date" />
+                                        </div>
+                                        <div class="form group text-left col-md-offset-3 padding-left">
+                                            <button type="button" class="btn btn-success" onclick="showMe()"> Schedule </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row">
+                                    <h4 class="border-bottom col-md-12 text-left margin-top"> Scheduled Email </h4>
+                                    <table class="table table-striped table-hover">
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>To</th>
+                                            <th class="text-center">Cancel</th>
+                                        </tr>
+                                        <tr>
+                                            <td>7/12/2017</td>
+                                            <td>12:00:00 PM</td>
+                                            <td>email@email.com</td>
+                                            <td class="text-center"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove glyphicon-red" aria-hidden="true"></button></span></td>
+                                        </tr>
+                                        <tr id="cancelEmail">
+                                            <td>7/20/2017</td>
+                                            <td>3:00:00 PM</td>
+                                            <td>email@email.com</td>
+                                            <td class="text-center"><button type="button" id="removeMe" class="btn btn-default" onclick="emailRemove()"><span class="glyphicon glyphicon-remove glyphicon-red" aria-hidden="true"></button></span></td>
+                                        </tr>
+                                        <tr id="showEmail" style="visibility:hidden;">
+                                            <td>7/23/2017</td>
+                                            <td>2:30:00 PM</td>
+                                            <td>email@email.com</td>
+                                            <td class="text-center"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove glyphicon-red" aria-hidden="true"></button></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <h4 class="border-bottom col-md-12 text-left margin-top"> Recently Sent Email </h4>
+                                    <table class="table table-striped table-hover">
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>To</th>
+                                        </tr>
+                                        <tr>
+                                            <td>7/5/2017</td>
+                                            <td>2:00:00 PM</td>
+                                            <td>email@email.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7/1/2017</td>
+                                            <td>5:00:00 PM</td>
+                                            <td>email@email.com</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- thc-live data -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end overview -->
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function showMe() {
+            document.getElementById("showEmail").style.visibility = "visible";
+        }
+        function emailRemove () {
+            var btn = document.getElementById('removeMe');
+            document.getElementById('cancelEmail').remove();
+            this.remove();
+        }
+    </script>
+  </body>
+</html>

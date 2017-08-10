@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Sample CMS | Feed Property Edit</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://google.com"><img src="https://usatftw.files.wordpress.com/2017/01/yourface.png?w=1000"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="../property-search.html">Properties</a></li>
+            <li><a href="../agent-search.html">Agents</a></li>
+            <li class="active"><a href="../feed.html">Feeds</a></li>
+            <li><a href="../office.html">Office</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="True" aria-expanded="false">Welcome, User</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Manage Preferences</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">User Role</a></li>
+                </ul>
+            </li>
+            <li><a href="../login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="glyphicon glyphicon-cog glyphicon-top" aria-hidden="true"></span> Dashboard <small> Feed Property Edit </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- breadcrumb for header -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Luxury Property Edit</li>
+                <li class="li-float-right"><a href="../property/property-edit.html"><button type="button" class="btn btn-primary"> Edit Property </button></a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+    
+    <!-- main content section -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> Overview </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="propertyMenu">
+                                <ul class="list-group">
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="../feed.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Overview</a></li>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#property" data-toggle="toggle"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Properties</a></li>
+                                        <div class="toggle" id="property">
+                                          <li class="list-group-item feed-edit-sidebar-link"><a href="feed-property.html">Search Feed</a></li>
+                                          <li class="list-group-item feed-edit-sidebar-link sub-active"><a href="feed-property-edit.html">Edit Property</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="#agent" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Agents</a></li>
+                                        <div class="collapse" id="agent">
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent.html">Search Feed</a></li>
+                                            <li class="list-group-item feed-edit-sidebar-link"><a href="feed-agent-edit.html">Edit Agent</a></li>
+                                        </div>
+                                    <li class="list-group-item property-edit-sidebar-link"><a href="feed-office.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Office</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title"> 1234 Main Street, City, CA </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="well">
+                                <div class="row">
+                                    <h4 class="col-md-12 border-bottom"> Luxury Feed Data </h4>
+                                    <p><label class="col-md-4"><b> MLS Number: </b></label> 123456789 </p>
+                                    <p><label class="col-md-4"><b> MLS Listing Status: </b></label> Active </p>
+                                    <p><label class="col-md-4"><b> Closed Date: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Price: </b></label> $4,500,000 </p>
+                                    <p><label class="col-md-4"><b> Address Street Number: </b></label> 1234 </p>
+                                    <p><label class="col-md-4"><b> Address Street Name: </b></label> Main </p>
+                                    <p><label class="col-md-4"><b> Address City: </b></label> City </p>
+                                    <p><label class="col-md-4"><b> Address County: </b></label> County </p>
+                                    <p><label class="col-md-4"><b> Address State: </b></label> California </p>
+                                    <p><label class="col-md-4"><b> Address Zip: </b></label> 93010 </p>
+                                    <p><label class="col-md-4"><b> Address Subdivision: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Address Township: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Address Country: </b></label> USA </p>
+                                    <p><label class="col-md-4"><b> List Date: </b></label> 2017-05-17 T05:00:00 </p>
+                                    <p><label class="col-md-4"><b> Listing Agent Id: </b></label> 00000 </p>
+                                    <p><label class="col-md-4"><b> School Middle: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Tax Year: </b></label> 2015 </p>
+                                    <p><label class="col-md-4"><b> Garage Description: </b></label> Garage Door Opener, Transmitter, Heated, 7 foot or more high garage door </p>
+                                    <p><label class="col-md-4"><b> Basement YN: </b></label> Yes </p>
+                                    <p><label class="col-md-4"><b> Basement Description: </b></label> Finished, Exterior Access </p>
+                                    <p><label class="col-md-4"><b> Building Style: </b></label> EIFS (e.g. Dryvit)., Stucco </p>
+                                    <p><label class="col-md-4"><b> Fireplaces: </b></label> 1 </p>
+                                    <p><label class="col-md-4"><b> Lot Description: </b></label> Beach, Fenced Yard, Irregular, Lake Front, Landscaped Professionally </p>
+                                    <p><label class="col-md-4"><b> Lot Size Acres: </b></label> 1.0-1.99 Acres </p>
+                                    <p><label class="col-md-4"><b> Listing Office Email Address: </b></label> info@samplecms.com </p>
+                                    <p><label class="col-md-4"><b> Listing Office Phone: </b></label> 555-555-5555 </p>
+                                    <p><label class="col-md-4"><b> Relocation Membership ID: </b></label> 00000 </p>
+                                    <p><label class="col-md-4"><b> Lot Size Dimensions: </b></label> 114 x 660 x 90 x 730 </p>
+                                    <p><label class="col-md-4"><b> Room Count Total Full Baths: </b></label> 5 </p>
+                                    <p><label class="col-md-4"><b> Room Count Total Half Baths: </b></label> 1 </p>
+                                    <p><label class="col-md-4"><b> Member Web Page URL: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Listing Agent Name: </b></label> Bob Smith </p>
+                                    <p><label class="col-md-4"><b> Listing Agent First Name: </b></label> Bob </p>
+                                    <p><label class="col-md-4"><b> Listing Agent Last Name: </b></label> Smith </p>
+                                    <p><label class="col-md-4"><b> MLS Board: </b></label> 2 </p>
+                                    <p><label class="col-md-4"><b> Listing Office ID: </b></label> 0000 </p>
+                                    <p><label class="col-md-4"><b> Listing Office Name: </b></label> Sample CMS </p>
+                                    <p><label class="col-md-4"><b> CoList Agent 1 MLS ID: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Listing Modified Date: </b></label> 2017-07-12 T18:44:16 </p>
+                                    <p><label class="col-md-4"><b> Photo Modified Date: </b></label> 2017-06-20 T11:05:59 </p>
+                                    <p><label class="col-md-4"><b> Property Class: </b></label> Single Family </p>
+                                    <p><label class="col-md-4"><b> Room Count Total Bedrooms: </b></label> 4 </p>
+                                    <p><label class="col-md-4"><b> Room Count Total Rooms: </b></label> 10 </p>
+                                    <p><label class="col-md-4"><b> School Elementary: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> School High: </b></label> N/A </p>
+                                    <p><label class="col-md-4"><b> Tax: </b></label> 175270.1 </p>
+                                    <p><label class="col-md-4"><b> Year Built: </b></label> 1980 </p>
+                                    <p><label class="col-md-4"><b> Virtual Tour URL: </b></label> http://youtube.com </p>
+                                    <p><label class="col-md-4"><b> List Agent Email Address: </b></label> bobsmith@samplecms.com </p>
+                                    <p><label class="col-md-4"><b> Remarks: </b></label><span class="col-md-8 margin-left-neg"> Ut consequat eros eu sapien venenatis tincidunt. Suspendisse potenti. Nam in suscipit elit, ac blandit nisl. Aenean pulvinar elit in aliquet malesuada. Nulla facilisi. Donec at tristique diam. Sed consectetur eu libero et fringilla. Praesent consectetur ipsum eget urna hendrerit interdum.</span></p>
+                                </div>
+                                <div class="row">
+                                    <h4 class="col-md-12 border-bottom margin-top"> Luxury Feed Photos </h4>
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th>MLS Board Code</th>
+                                            <th>MLS Listing Number</th>
+                                            <th>Photo Display Order</th>
+                                            <th>Photo Link</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>123456789</td>
+                                            <td>1</td>
+                                            <td>https://static.pexels.com/photos/186077/pexels-photo-186077.jpeg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>123456789</td>
+                                            <td>2</td>
+                                            <td>http://cdn.homedsgn.com/wp-content/uploads/2012/11/Soldati-House-Interior-01-800x600.jpg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>123456789</td>
+                                            <td>3</td>
+                                            <td>http://o.homedsgn.com/wp-content/uploads/2012/11/Soldati-House-Interior-05-1.jpg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>123456789</td>
+                                            <td>4</td>
+                                            <td>http://acasadisimi.com/wp-content/uploads/2016/12/best-one-bedroom-house-interior-design-gallery.jpg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>123456789</td>
+                                            <td>5</td>
+                                            <td>http://interiordesign4.com/wp-content/uploads/2012/11/best-home-interior-design-51.jpg</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <h4 class="col-md-12 border-bottom margin-top"> Luxury Feed Room Data </h4>
+                                    <p><label class="col-md-3"><b> Laundry Room: </b></label> 11X10 </p>
+                                    <p><label class="col-md-3"><b> Kitchen Room: </b></label> 14X25 </p>
+                                    <p><label class="col-md-3"><b> Living Room: </b></label> 18X30 </p>
+                                    <p><label class="col-md-3"><b> Bedroom 1: </b></label> 17X28 </p>
+                                    <p><label class="col-md-3"><b> Family Room: </b></label> 20X30 </p>
+                                    <p><label class="col-md-3"><b> Dining Room: </b></label> 14X20 </p>
+                                    <p><label class="col-md-3"><b> Eating Area: </b></label> 10X10 </p>
+                                    <p><label class="col-md-3"><b> Office: </b></label> 11X20 </p>
+                                    <p><label class="col-md-3"><b> Library: </b></label> 13X15 </p>
+                                    <p><label class="col-md-3"><b> Bedroom 2: </b></label> 15X17 </p>
+                                    <p><label class="col-md-3"><b> Bedroom 3: </b></label> 15X19 </p>
+                                    <p><label class="col-md-3"><b> Bedroom 4: </b></label> 14X18 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
